@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/requirement.css";
-
 export const Requirement = () => {
   return (
     <div className="dashboard">

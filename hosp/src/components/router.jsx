@@ -1,14 +1,18 @@
-import React from "react";
-import { Route, Routes } from "react-router-dom";
-import HomePage from "./HomePage";
-import Requirement from "../pages/requirement";
+import React from 'react';
+import {Routes,Route } from 'react-router-dom';
+import HomePage from '../pages/HomePage';
+import Requirement from '../pages/requirement';
+import Confirm from '../pages/confirm';
 
-export function RouterPaths() {
+function RouterPaths() {
   return (
     <Routes>
-      <Route path="/home" element={<HomePage />} />
-      <Route path="/" element={<Requirement/>}/>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/requirement" element={<Requirement />} />
+      <Route path="/confirm" element={<Confirm />} />
     </Routes>
   );
 }
+
+export default RouterPaths;
 

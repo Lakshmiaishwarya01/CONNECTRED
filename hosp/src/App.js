@@ -1,20 +1,12 @@
 import React from 'react';
-import HomePage from './components/HomePage';
-import './App.css';
-import { RouterPaths } from './components/router'; // Importing RouterPaths
-
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom'; 
+import RouterPaths from './components/router';
 
 function App() {
   return (
     <div className="app">
-      {/* Rendering HomePage */}
-      <HomePage />
-      <Router>
-        <div className='overflow-container'>
-          {/* Rendering RouterPaths */}
-          <RouterPaths />
-        </div>
+      <Router> 
+        <RouterPaths />
       </Router>
     </div>
   );
