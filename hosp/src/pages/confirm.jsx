@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/confirm.css";
 
-export const Confirm = () => {
+const Confirm = () => {
   return (
     <div className="dashboard">
       <div className="div">
