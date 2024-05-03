@@ -1,32 +1,12 @@
 import React from "react";
+import Menu from '../components/menu.jsx';
 import "../styles/confirm.css";
-
+import "../styles/requirement.css";
 const Confirm = () => {
   return (
     <div className="conf">
       <div className="div">
-        <div className="overlap">
-          <img className="line" alt="Line" src="line-2.svg" />
-          <div className="text-wrapper">Donation History</div>
-          <img className="img" alt="Line" src="line-3.svg" />
-          <div className="text-wrapper-2">Patient Requests</div>
-          <img className="line-2" alt="Line" src="line-4.svg" />
-          <div className="text-wrapper-3">Donor Confirmation</div>
-          <div className="group">
-            <p className="connectred">
-              <span className="span">co</span>
-              <span className="text-wrapper-4">nn</span>
-              <span className="text-wrapper-5">ec</span>
-              <span className="text-wrapper-6">tr</span>
-              <span className="text-wrapper-7">ed</span>
-            </p>
-          </div>
-          <div className="overlap-group">
-            <div className="text-wrapper-8">Post a requirement</div>
-            <div className="text-wrapper-9">+</div>
-          </div>
-          <img className="line-3" alt="Line" src="line-1.svg" />
-        </div>
+      <Menu />
         <div className="overlap-2">
           <div className="overlap-group-wrapper">
             <div className="overlap-group-2">
@@ -83,7 +63,6 @@ const Confirm = () => {
                 <div className="text-wrapper-21">Donor Id : a76s8d77s89a</div>
                 <div className="text-wrapper-22">Patient name : Swetha</div>
               </div>
-              <img className="line-4" alt="Line" src="line-5.svg" />
             </div>
             <div className="rectangle-2" />
             <img className="checkmark-2" alt="Checkmark" src="checkmark-3.png" />

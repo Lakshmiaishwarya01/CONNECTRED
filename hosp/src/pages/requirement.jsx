@@ -1,51 +1,57 @@
-import React from "react";
+import React, { useState } from "react";
+import Menu from '../components/menu';
 import "../styles/requirement.css";
 
-export const Requirement = () => {
+const Requirement = () => {
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = () => {
+    setSubmitted(true);
+  };
+
+  const handleClose = () => {
+    setSubmitted(false);
+  };
+
   return (
     <div className="dashboard">
       <div className="div">
-        <div className="overlap-group">
-          <img className="line" alt="Line" src="line-2.svg" />
-          <div className="text-wrapper">Donation History</div>
-          <img className="img" alt="Line" src="line-3.svg" />
-          <div className="text-wrapper-2">Patient Requests</div>
-          <img className="line-2" alt="Line" src="line-4.svg" />
-          <div className="text-wrapper-3">Donor Confirmation</div>
-          <div className="group">
-            <p className="connectred">
-              <span className="span">co</span>
-              <span className="text-wrapper-4">nn</span>
-              <span className="text-wrapper-5">ec</span>
-              <span className="text-wrapper-6">tr</span>
-              <span className="text-wrapper-7">ed</span>
-            </p>
-          </div>
-          <div className="overlap">
-            <div className="text-wrapper-8">Post a requirement</div>
-            <div className="text-wrapper-9">+</div>
-          </div>
-          <img className="line-3" alt="Line" src="line-1.svg" />
-        </div>
+        <Menu />
         <div className="overlap-2">
-          <div className="text-wrapper-10">Select urgency level</div>
-          <div className="back-wrapper">
-            <img className="back" alt="Back" src="back.png" />
-          </div>
-          <div className="text-wrapper-11">Select blood group</div>
-          <div className="img-wrapper">
-            <img className="back-2" alt="Back" src="image.png" />
-          </div>
           <div className="text-wrapper-12">Post a requirement</div>
-          <img className="line-4" alt="Line" src="line-5.svg" />
           <div className="text-wrapper-13">Enter patient name</div>
-          <div className="rectangle" />
-          <div className="div-wrapper">
+          <input type="text" className="rectangle" placeholder="Enter name" />
+          <div className="text-wrapper-11">Select blood group</div>
+          <select className="img-wrapper" placeholder="Enter name">
+            <option value="" disabled selected>Select blood group</option>
+            <option value="A+">A+</option>
+            <option value="B+">B+</option>
+            <option value="O+">O+</option>
+            <option value="AB+">AB+</option>
+            <option value="A-">A-</option>
+            <option value="B-">B-</option>
+            <option value="O-">O-</option>
+            <option value="AB-">AB-</option>
+          </select>
+          <div className="text-wrapper-10">Select urgency level</div>
+          <select className="back-wrapper" placeholder="Enter name" >
+            <option value="" disabled selected>Select urgency level</option>
+            <option value="urgent">Urgent</option>
+            <option value="emergency">Emergency</option>
+          </select>
+          <button className="div-wrapper" onClick={handleSubmit}>
             <div className="text-wrapper-14">Submit</div>
-          </div>
+          </button>
+          {submitted && (
+            <div className="popup">
+              <button className="close-btn" onClick={handleClose}>X</button>
+              <p className="success-message">Successfully submitted!</p>
+            </div>
+          )}
         </div>
       </div>
     </div>
   );
 };
+
 export default Requirement;
