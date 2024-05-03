@@ -3,7 +3,7 @@ import "../styles/requirement.css";
 
 export const Requirement = () => {
   return (
-    <div className="his">
+    <div className="dashboard">
       <div className="div">
         <div className="overlap-group">
           <img className="line" alt="Line" src="line-2.svg" />

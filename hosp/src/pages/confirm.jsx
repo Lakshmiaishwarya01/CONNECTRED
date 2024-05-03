@@ -3,7 +3,7 @@ import "../styles/confirm.css";
 
 const Confirm = () => {
   return (
-    <div className="dashboard">
+    <div className="conf">
       <div className="div">
         <div className="overlap">
           <img className="line" alt="Line" src="line-2.svg" />
