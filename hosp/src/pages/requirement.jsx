@@ -9,7 +9,6 @@ const Requirement = () => {
   const [urgencyLevel, setUrgencyLevel] = useState("");
 
   const handleSubmit = () => {
-    // Check if all required fields are filled
     if (patientName && bloodGroup && urgencyLevel) {
       setSubmitted(true);
     } else {
