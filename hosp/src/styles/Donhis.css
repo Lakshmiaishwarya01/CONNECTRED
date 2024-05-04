@@ -1,0 +1,493 @@
+.history {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height:100vh;
+  }
+ .history .his{ background-color: #ffffff;
+  border-radius: 30px;
+  height: 1104px;
+  left: 650px;
+  position: absolute;
+  top: 37px;
+  width:1500px;
+ }
+  .history .overlap-wrapper {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(206, 44, 107, 0.2) 100%);
+    background-color: rgba(255, 255, 255, 1);
+    height: 1080px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  
+  .history .rectangle {
+    background-color: #ffffff;
+    height: 1080px;
+    left: 0;
+    position: absolute;
+    top: 24px;
+    width: 402px;
+  }
+  
+  .history .line {
+    height: 1px;
+    left: 63px;
+    object-fit: cover;
+    position: absolute;
+    top: 346px;
+    width: 276px;
+  }
+  
+  .history .text-wrapper {
+    color: #000000;
+    font-family: "SF Pro Display-SemiboldItalic", Helvetica;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    left: 129px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 290px;
+    white-space: nowrap;
+  }
+  
+  .history .img {
+    height: 1px;
+    left: 63px;
+    object-fit: cover;
+    position: absolute;
+    top: 434px;
+    width: 276px;
+  }
+  
+  .history .div {
+    color: #000000;
+    font-family: "SF Pro Display-SemiboldItalic", Helvetica;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    left: 125px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 378px;
+    white-space: nowrap;
+  }
+  
+  
+  .history .text-wrapper-2 {
+    color: #000000;
+    font-family: "SF Pro Display-SemiboldItalic", Helvetica;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    left: 116px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 466px;
+    white-space: nowrap;
+  }
+  
+  .history .group {
+    height: 44px;
+    left: 104px;
+    position: absolute;
+    top: 57px;
+    width: 203px;
+  }
+  
+  
+  .history .span {
+    color: #000000;
+    font-weight: 900;
+  }
+  
+  .history .text-wrapper-3 {
+    color: #000000;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+  }
+  
+  .history .text-wrapper-4 {
+    color: #000000;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+  }
+  
+  .history .text-wrapper-5 {
+    color: #000000;
+    font-family: "Inter-Regular", Helvetica;
+  }
+  
+  .history .text-wrapper-6 {
+    color: #000000;
+    font-family: "Inter-ExtraLight", Helvetica;
+    font-weight: 200;
+  }
+  
+  .history .p {
+    color: #ffffff;
+    font-family: "Inter-Black", Helvetica;
+    font-size: 320px;
+    font-weight: 400;
+    left: 69px;
+    letter-spacing: 0;
+    line-height: normal;
+    opacity: 0.1;
+    position: absolute;
+    text-align: center;
+    top: 630px;
+  }
+  
+  .history .text-wrapper-7 {
+    font-weight: 900;
+  }
+  
+  .history .text-wrapper-8 {
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+  }
+  
+  .history .text-wrapper-9 {
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+  }
+  
+  .history .text-wrapper-10 {
+    font-family: "Inter-Regular", Helvetica;
+  }
+  
+  .history .text-wrapper-11 {
+    font-family: "Inter-ExtraLight", Helvetica;
+    font-weight: 200;
+  }
+  
+  .history .rectangle-2 {
+    background-color: #fff0f6;
+    border-radius: 30px;
+    box-shadow: 0px 1px 42.4px -20px #00000040;
+    height: 62px;
+    left: 54px;
+    position: absolute;
+    top: 156px;
+    width: 294px;
+  }
+  
+  .history .text-wrapper-12 {
+    color: #ce2c6b;
+    font-family: "SF Pro Display-Bold", Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    left: 98px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 174px;
+    white-space: nowrap;
+  }
+  
+  .history .text-wrapper-13 {
+    color: #ce2c6b;
+    font-family: "SF Pro Display-Bold", Helvetica;
+    font-size: 36px;
+    font-weight: 700;
+    left: 283px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 162px;
+    width: 24px;
+  }
+  
+  
+  .history .rectangle-3 {
+    background-color: #ffffff;
+    border-radius: 30px;
+    height: 1104px;
+    left: 476px;
+    position: absolute;
+    top: 0;
+    width: 1419px;
+  }
+  
+  .history .overlap-group-wrapper {
+    height: 101px;
+   
+    position: absolute;
+    top: 562px;
+    width: 1303px;
+  }
+  
+ 
+  
+  .history .text-wrapper-14 {
+    color: #000000;
+    font-family: "SF Pro Display-LightItalic", Helvetica;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+    left: 623px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 49px;
+    white-space: nowrap;
+  }
+  
+  .history .text-wrapper-15 {
+    color: #000000;
+    font-family: "SF Pro Display-LightItalic", Helvetica;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+    left: 296px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 49px;
+    white-space: nowrap;
+  }
+  
+  .history .text-wrapper-16 {
+    color: #000000;
+    font-family: "SF Pro Display-LightItalic", Helvetica;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+    left: 298px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 16px;
+    white-space: nowrap;
+  }
+  
+  .history .text-wrapper-17 {
+    color: #000000;
+    font-family: "SF Pro Display-SemiboldItalic", Helvetica;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    left: 76px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 35px;
+    white-space: nowrap;
+  }
+  
+  .history .text-wrapper-18 {
+    color: #000000;
+    font-family: "SF Pro Display-LightItalic", Helvetica;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+    left: 623px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 16px;
+    white-space: nowrap;
+  }
+  
+  .history .text-wrapper-19 {
+    color: #000000;
+    font-family: "SF Pro Display-LightItalic", Helvetica;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+    left: 1033px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 16px;
+    white-space: nowrap;
+  }
+  
+  .history .div-wrapper {
+    height: 101px;
+    
+    position: absolute;
+    top: 440px;
+    width: 1303px;
+  }
+  
+  .history .text-wrapper-20 {
+    color: #000000;
+    font-family: "SF Pro Display-LightItalic", Helvetica;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+    left: 290px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 16px;
+    white-space: nowrap;
+  }
+  
+  .history .text-wrapper-21 {
+    color: #000000;
+    font-family: "SF Pro Display-SemiboldItalic", Helvetica;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    left: 74px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 35px;
+    white-space: nowrap;
+  }
+  
+  .history .text-wrapper-22 {
+    color: #000000;
+    font-family: "SF Pro Display-LightItalic", Helvetica;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+    left: 1032px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 16px;
+    white-space: nowrap;
+  }
+  
+  .history .group-2 {
+    height: 101px;
+   
+    position: absolute;
+    top: 315px;
+    width: 1303px;
+  }
+  
+  .history .text-wrapper-23 {
+    color: #000000;
+    font-family: "SF Pro Display-LightItalic", Helvetica;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+    left: 296px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 16px;
+    white-space: nowrap;
+  }
+  
+  .history .text-wrapper-24 {
+    color: #000000;
+    font-family: "SF Pro Display-SemiboldItalic", Helvetica;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    left: 73px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 35px;
+    white-space: nowrap;
+  }
+  
+  .history .text-wrapper-25 {
+    color: #000000;
+    font-family: "SF Pro Display-LightItalic", Helvetica;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+    left: 1031px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 16px;
+    white-space: nowrap;
+  }
+  
+  .history .group-3 {
+    height: 136px;
+    
+    position: absolute;
+    top: 154px;
+    width: 1326px;
+  }
+  
+  .history .overlap-2,
+  .history .overlap-5 {
+    background-color: #fff0f6;
+    border-radius: 30px;
+    height: 101px;
+    left: 0;
+    position: absolute;
+    top: 36px;
+    width: 1291px;
+  }
+  
+  .history .text-wrapper-26 {
+    color: #000000;
+    font-family: "SF Pro Display-SemiboldItalic", Helvetica;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    left: 63px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 35px;
+    white-space: nowrap;
+  }
+  
+  .history .text-wrapper-27 {
+    color: #000000;
+    font-family: "SF Pro Display-LightItalic", Helvetica;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+    left: 1020px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 16px;
+    white-space: nowrap;
+  }
+  
+  .history .text-wrapper-28 {
+    color: #000000;
+    font-family: "SF Pro Display-Bold", Helvetica;
+    font-size: 32px;
+    font-weight: 700;
+    left: 572px;
+    letter-spacing: 0;
+    line-height: normal;
+    opacity: 0.5;
+    position: absolute;
+    text-align: center;
+    top: 30px;
+    white-space: nowrap;
+  }
+  
