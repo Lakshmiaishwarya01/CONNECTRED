@@ -2,25 +2,15 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/signup.css";
-import { connect } from "react-redux";
-import { signInWithGoogle } from "../firebase/auth";
+import { connect } from 'react-redux';
+import { useAuth } from '../../contexts/authcontext'
+import { doCreateUserWithEmailAndPassword } from "../firebase/auth";
 
-export const Sign = ({ signInWithGoogle }) => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [hospitalName, setHospitalName] = useState("");
+export const Sign = () => {
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+  const [hospitalName, setHospitalName] = useState("")
 
-  const handleSignUp = () => {
-    // Handle sign-up logic here
-    console.log("Email:", email);
-    console.log("Password:", password);
-    console.log("Hospital Name:", hospitalName);
-  };
-
-  const handleSignInWithGoogle = () => {
-    // Handle sign-in with Google logic here
-    signInWithGoogle();
-  };
 
   return (
     <div className="signuppage">
