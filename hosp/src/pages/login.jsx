@@ -1,31 +1,23 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { signInWithEmailAndPassword, signInWithGoogle } from "../firebase/auth"; // Import the signInWithGoogle function
+import { Navigate,Link } from "react-router-dom";
+import { useAuth } from '../../contexts/authcontext'
+import { doSignInWithEmailAndPassword, doSignInWithGoogle } from "../firebase/auth"; // Import the signInWithGoogle function
 
 import "../styles/login.css";
 
 export const Desktop = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
-  const handleLogin = async () => {
-    try {
-      await signInWithEmailAndPassword(email, password); // Call your existing signInWithEmailAndPassword function
-      console.log("User logged in successfully!");
-    } catch (error) {
-      console.error("Error logging in:", error.message);
+  const [isSigningIn,setIssigningIn] = useState(false);
+  const onSubmit = async (e) => {
+    e.preventDefault()
+    if(!isSigningIn) {
+      setIssigningIn(true)
+      await doSignInWithEmailAndPassword(email,password)
     }
-  };
+  }
 
-  const handleGoogleLogin = async () => {
-    try {
-      await signInWithGoogle(); // Call the signInWithGoogle function for Google login
-      console.log("User logged in with Google successfully!");
-    } catch (error) {
-      console.error("Error logging in with Google:", error.message);
-    }
-  };
-
+  
   return (
     <div className="loginpage">
       <div className="div">
