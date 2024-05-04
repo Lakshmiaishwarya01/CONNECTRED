@@ -2,12 +2,14 @@ import React from "react";
 import Menu from '../components/menu.jsx';
 import "../styles/confirm.css";
 import "../styles/requirement.css";
+
 const Confirm = () => {
   return (
     <div className="conf">
       <div className="div">
-      <Menu />
+        <Menu />
         <div className="overlap-2">
+        <div className="text-wrapper-24">Donor Confirmation</div>
           <div className="overlap-group-wrapper">
             <div className="overlap-group-2">
               <div className="overlap-group-3">
@@ -23,6 +25,8 @@ const Confirm = () => {
               <div className="text-wrapper-15">Patient name : Arun</div>
             </div>
           </div>
+
+          {/* Adjust the formatting for overlap-wrapper */}
           <div className="overlap-wrapper">
             <div className="overlap-group-2">
               <div className="overlap-group-3">
@@ -38,6 +42,8 @@ const Confirm = () => {
               <div className="text-wrapper-15">Patient name : Arun</div>
             </div>
           </div>
+
+          {/* Adjust the formatting for div-wrapper */}
           <div className="div-wrapper">
             <div className="overlap-group-2">
               <div className="overlap-group-3">
@@ -53,6 +59,8 @@ const Confirm = () => {
               <div className="text-wrapper-15">Patient name : Arun</div>
             </div>
           </div>
+
+          {/* Adjust the formatting for overlap-3 */}
           <div className="overlap-3">
             <div className="group-2">
               <div className="overlap-4">
@@ -68,10 +76,12 @@ const Confirm = () => {
             <img className="checkmark-2" alt="Checkmark" src="checkmark-3.png" />
             <div className="text-wrapper-23">Confirm Donation</div>
           </div>
-          <div className="text-wrapper-24">Donor Confirmation</div>
+
+          
         </div>
       </div>
     </div>
   );
 };
+
 export default Confirm;
