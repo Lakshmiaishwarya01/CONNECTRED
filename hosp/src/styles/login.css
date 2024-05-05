@@ -145,7 +145,7 @@
   .loginpage .text-wrapper-5 {
     color: #000000;
     font-family: "SF Pro Display-Bold", Helvetica;
-    font-size: 27.9px;
+    font-size: 30px;
     font-weight: 700;
     left: 214px;
     letter-spacing: 0;
@@ -222,7 +222,8 @@
     position: absolute;
     top: 0;
     width: 418px;
-    font-size: 25px;
+    font-size: 20px;
+    padding-left: 15px;
   }
   
   

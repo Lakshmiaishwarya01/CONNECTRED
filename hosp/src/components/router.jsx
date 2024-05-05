@@ -6,6 +6,7 @@ import Confirm from '../pages/confirm';
 import Menu from './menu';
 import Login from '../pages/login';
 import Signup from '../pages/signup';
+import Request from '../pages/patientreq';
 function RouterPaths() {
   return (
     <Routes>
@@ -15,6 +16,7 @@ function RouterPaths() {
       <Route path="/menu" element={<Menu />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
+      <Route path="/request" element={<Request />} />
     </Routes>
   );
 }
