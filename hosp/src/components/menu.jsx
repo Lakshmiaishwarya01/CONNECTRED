@@ -12,7 +12,7 @@ const Menu = () => {
   <div className="req">Post a requirement +</div>
 </Link>
         <div className="line-1"><hr/></div> 
-        <Link to="/history" className="hist">Donation History</Link>
+        <Link to="/donhis" className="hist">Donation History</Link>
         <div className="line-2"><hr/></div> 
         <Link to="/request" className="pat">Patient Requests</Link>
         <div className="line-3"><hr/></div> 
