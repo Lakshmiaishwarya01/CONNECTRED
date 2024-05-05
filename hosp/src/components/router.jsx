@@ -4,6 +4,8 @@ import HomePage from '../pages/HomePage';
 import Requirement from '../pages/requirement';
 import Confirm from '../pages/confirm';
 import Menu from './menu';
+import Login from '../pages/login';
+import Signup from '../pages/signup';
 function RouterPaths() {
   return (
     <Routes>
@@ -11,6 +13,8 @@ function RouterPaths() {
       <Route path="/requirement" element={<Requirement />} />
       <Route path="/confirm" element={<Confirm />} />
       <Route path="/menu" element={<Menu />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
     </Routes>
   );
 }
