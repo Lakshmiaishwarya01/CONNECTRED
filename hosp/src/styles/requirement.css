@@ -38,8 +38,8 @@
   width:500px;
   height:200px;
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  justify-content: center; 
+  align-items: center; 
   text-align: center;
 }
 

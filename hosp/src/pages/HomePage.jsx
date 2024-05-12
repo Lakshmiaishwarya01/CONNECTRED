@@ -30,13 +30,7 @@ const HomePage = () => {
             </button>
           </Link>
         </div>
-        <div className="overlap-2">
-          <Link to="/signup">
-            <button className="rectangle-2">
-              <div className="signup">Sign Up</div>
-            </button>
-          </Link>
-        </div>
+       
         <div className="overlap-3">
           <p className="connectred">connectred</p>
           <div className="hospital">.hospital</div>

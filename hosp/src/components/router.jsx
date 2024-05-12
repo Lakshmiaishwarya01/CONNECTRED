@@ -5,7 +5,6 @@ import Requirement from '../pages/requirement';
 import Confirm from '../pages/confirm';
 import Menu from './menu';
 import Login from '../pages/login';
-import Signup from '../pages/signup';
 import Request from '../pages/patientreq';
 import Donhis from '../pages/Donhis';
 function RouterPaths() {
@@ -16,7 +15,7 @@ function RouterPaths() {
       <Route path="/confirm" element={<Confirm />} />
       <Route path="/menu" element={<Menu />} />
       <Route path="/login" element={<Login />} />
-      <Route path="/signup" element={<Signup />} />
+      
       <Route path="/request" element={<Request />} />
       <Route path="/donhis" element={<Donhis />} />
     </Routes>

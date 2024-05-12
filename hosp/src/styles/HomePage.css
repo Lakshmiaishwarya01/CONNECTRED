@@ -151,14 +151,6 @@
   width: 100%;
 }
 
-.desktop .overlap-2 {
-  position: absolute;
-  top: 24px;
-  width: 157px;
-  display: flex;
-  flex-direction: column;
-  right: 20px; 
-}
 
 
 @media screen and (max-width: 760px) {

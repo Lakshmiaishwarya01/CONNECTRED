@@ -1,21 +1,40 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import "../styles/login.css";
+import { verifyUserCredentials } from "../firebase/auth";
+import { useAuth } from "../contexts/authContexts/index";
 
 export const Login = () => {
+  const { userLoggedIn ,setUserLoggedIn} = useAuth();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [formSubmitted, setFormSubmitted] = useState(false);
 
-  const handleLogin = () => {
+  const handleLogin = async (e) => {
+    e.preventDefault();
+
     if (email && password) {
       console.log("Logging in...");
+      try {
+        
+        const hospital = await verifyUserCredentials(email,Number(password));
+
+       
+        console.log("Login successful:", hospital);
+        setUserLoggedIn(true); 
+      } catch (error) {
+        console.error("Login failed:", error.message);
+        alert("Login failed. Please check your credentials.");
+      }
     } else {
       alert("All fields are required.");
-      setFormSubmitted(true);
     }
   };
-
+  console.log("userLoggedIn:", userLoggedIn); // Check userLoggedIn value
+  
+  if (userLoggedIn) {
+    console.log("Redirecting to /requirement..."); // Check if redirection condition is met
+    return <Navigate to={'/requirement'} replace={true} />;
+  }
   return (
     <div className="loginpage">
       <div className="div">
@@ -49,18 +68,9 @@ export const Login = () => {
                   </div>
 
                   <div className="div-wrapper">
-                   
-                    {(email && password) || formSubmitted ? (
-                      <Link to="/requirement">
-                        <button className="overlap-2" onClick={handleLogin}>
-                          <div className="text-wrapper-8">Log In</div>
-                        </button>
-                      </Link>
-                    ) : (
-                      <button className="overlap-2" onClick={handleLogin}>
-                        <div className="text-wrapper-8">Log In</div>
-                      </button>
-                    )}
+                    <button className="overlap-2" onClick={handleLogin}>
+                      <div className="text-wrapper-8">Log In</div>
+                    </button>
                   </div>
                   <div className="group-4">
                     <div className="group-5">
@@ -69,7 +79,7 @@ export const Login = () => {
                         <div className="overlap-group-2">
                           <div className="text-wrapper-9">Enter password</div>
                           <input
-                            type="password"
+                            type="number"
                             className="rectangle"
                             placeholder="Enter password"
                             value={password}
@@ -80,29 +90,10 @@ export const Login = () => {
                       </div>
                     </div>
                   </div>
-                  <button className="group-6">
-                    <div className="frame">
-                      <div className="text-wrapper-10">Login with Google</div>
-                    </div>
-                  </button>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="overlap-group-5">
-          <Link to="/login">
-            <button className="rectangle5">
-              <div className="login2">Login</div>
-            </button>
-          </Link>
-        </div>
-        <div className="overlap-10">
-          <Link to="/signup">
-            <button className="rectangle10">
-              <div className="signup2">Sign Up</div>
-            </button>
-          </Link>
         </div>
       </div>
     </div>
