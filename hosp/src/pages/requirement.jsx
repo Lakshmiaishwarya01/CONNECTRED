@@ -1,29 +1,57 @@
 import React, { useState } from "react";
 import Menu from '../components/menu';
 import "../styles/requirement.css";
+import { ref, push } from 'firebase/database';
+import { db } from '../firebase/firebase';
+import { useLocation } from "react-router-dom";
 
-const Requirement = () => {
+const Requirement = ({ hospitalName }) => {
+  const ls=useLocation()
+  console.log(ls.state)
+  console.log("hospitalName in Requirement component:", ls.state);
+
   const [submitted, setSubmitted] = useState(false);
   const [patientName, setPatientName] = useState("");
   const [bloodGroup, setBloodGroup] = useState("");
   const [urgencyLevel, setUrgencyLevel] = useState("");
 
   const handleSubmit = () => {
+    console.log("Submitting form...");
+    console.log("hospitalName in handleSubmit:", ls.state);
+
     if (patientName && bloodGroup && urgencyLevel) {
-      setSubmitted(true);
+      console.log("All fields are filled");
+      console.log("Pushing data to database...");
+
+      push(ref(db, 'hospreq'), {
+        patientName,
+        bloodGroup,
+        urgencyLevel,
+        hospitalName:ls.state,
+      }).then(() => {
+        console.log("Data pushed successfully");
+        setPatientName(""); 
+        setBloodGroup("");  
+        setUrgencyLevel(""); 
+        setSubmitted(true);
+      }).catch((error) => {
+        console.error('Error adding document: ', error);
+      });
+
     } else {
       alert("Please fill in all required fields.");
     }
   };
 
   const handleClose = () => {
+    console.log("Closing popup...");
     setSubmitted(false);
   };
 
   return (
     <div className="dashboard">
       <div className="div">
-        <Menu />
+        <Menu hospitalName={hospitalName}/>
         <div className="overlap-2">
           <div className="text-wrapper-12">Post a requirement</div>
           <div className="text-wrapper-13">Enter patient name</div>
@@ -77,5 +105,5 @@ const Requirement = () => {
     </div>
   );
 };
-
+ 
 export default Requirement;

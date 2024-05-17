@@ -1,9 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getDatabase} from "firebase/database";
-
-
-const firebaseConfig = {
+ const firebaseConfig = {
   apiKey: "AIzaSyCmc5SKWkLMeYUdb-weNHU-r_A1p_eBHI8",
   authDomain: "connectred.firebaseapp.com",
   databaseURL: "https://connectred-default-rtdb.firebaseio.com",
@@ -19,4 +17,4 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getDatabase(app);
 
-export { app, auth, db };
+export { app, auth, db ,firebaseConfig };

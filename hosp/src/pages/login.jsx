@@ -1,13 +1,15 @@
 import React, { useState } from "react";
-import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "../styles/login.css";
 import { verifyUserCredentials } from "../firebase/auth";
 import { useAuth } from "../contexts/authContexts/index";
 
 export const Login = () => {
-  const { userLoggedIn ,setUserLoggedIn} = useAuth();
+  const nav=useNavigate()
+  const { userLoggedIn, setUserLoggedIn } = useAuth();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [hospitalName, setHospitalName] = useState(""); 
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -15,12 +17,11 @@ export const Login = () => {
     if (email && password) {
       console.log("Logging in...");
       try {
-        
-        const hospital = await verifyUserCredentials(email,Number(password));
-
-       
-        console.log("Login successful:", hospital);
-        setUserLoggedIn(true); 
+        const { matchedHospital, hospitalName } = await verifyUserCredentials(email, Number(password));
+        console.log("Login successful:", matchedHospital);
+        setUserLoggedIn(true);
+        setHospitalName(hospitalName);
+        console.log("hospital name:", hospitalName); 
       } catch (error) {
         console.error("Login failed:", error.message);
         alert("Login failed. Please check your credentials.");
@@ -29,12 +30,14 @@ export const Login = () => {
       alert("All fields are required.");
     }
   };
-  console.log("userLoggedIn:", userLoggedIn); // Check userLoggedIn value
-  
+
+  console.log("userLoggedIn:", userLoggedIn);
   if (userLoggedIn) {
-    console.log("Redirecting to /requirement..."); // Check if redirection condition is met
-    return <Navigate to={'/requirement'} replace={true} />;
+    console.log("Redirecting to /requirement...");
+    nav('/requirement',{state:hospitalName} );
   }
+
+  console.log("Rendering Login component...");
   return (
     <div className="loginpage">
       <div className="div">
@@ -79,7 +82,7 @@ export const Login = () => {
                         <div className="overlap-group-2">
                           <div className="text-wrapper-9">Enter password</div>
                           <input
-                            type="number"
+                            type="password"
                             className="rectangle"
                             placeholder="Enter password"
                             value={password}

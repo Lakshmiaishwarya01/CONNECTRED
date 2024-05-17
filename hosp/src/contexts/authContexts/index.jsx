@@ -12,6 +12,7 @@ export function AuthProvider({ children }) {
     const [currentUser, setCurrentUser] = useState(null);
     const [userLoggedIn, setUserLoggedIn] = useState(false);
     const [loading, setLoading] = useState(true);
+    const [hospitalName, setHospitalName] = useState(""); 
 
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, initializeUser);
@@ -33,7 +34,9 @@ export function AuthProvider({ children }) {
         currentUser,
         userLoggedIn,
         loading,
-        setUserLoggedIn, // Add setUserLoggedIn to the context value
+        setUserLoggedIn,
+        hospitalName, 
+        setHospitalName, 
     };
 
     return (

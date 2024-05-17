@@ -7,10 +7,8 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Assuming you have a function to check if the user is logged in
+    
     const checkLoginStatus = () => {
-      // Perform your authentication check here
-      // Set loading to false once the check is complete
       setLoading(false);
     };
 

@@ -7,28 +7,26 @@ export const verifyUserCredentials = async (email, password) => {
     const queryRef = query(hospRef, orderByChild('email'), equalTo(email));
     const snapshot = await get(queryRef);
 
-    console.log("Retrieved data:", snapshot.val());
-    
     if (!snapshot.exists()) {
       throw new Error('Hospital not found');
     }
 
     let matchedHospital = null;
+    let hospitalName = null; 
 
     snapshot.forEach((childSnapshot) => {
       const hospital = childSnapshot.val();
       if (hospital.pass && hospital.pass === password) {
         matchedHospital = hospital;
+        hospitalName = hospital.name; 
       }
     });
 
-    console.log("Matched hospital:", matchedHospital); 
-    
     if (!matchedHospital) {
       throw new Error('Incorrect email or password');
     }
 
-    return matchedHospital;
+    return { matchedHospital, hospitalName };
   } catch (error) {
     console.error('Authentication failed:', error.message);
     throw error;
