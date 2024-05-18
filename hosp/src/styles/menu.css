@@ -31,11 +31,11 @@
     top: 300px;
     white-space: nowrap;
     text-decoration: none;
+    cursor: pointer;
   }
   
   .menu .line-3 {
     height: 1px;
-    
     position: absolute;
     top: 450px;
     width: 276px;
@@ -55,7 +55,7 @@
     top: 400px;
     white-space: nowrap;
     text-decoration: none;
-  
+    cursor: pointer;
   }
   
   .menu .line-4{
@@ -79,7 +79,7 @@
     top: 500px;
     white-space: nowrap;
     text-decoration: none;
-  
+    cursor: pointer;
   }
   
   
@@ -108,15 +108,16 @@
    position: absolute;
    height: 100%;
    width:100%;
+   cursor: pointer;
   }
   .menu .overlap {
     background-color: #fff0f6;
     border-radius: 30px;
     box-shadow: 0px 1px 42.4px -20px #00000040;
     height: 62px;
-    display: flex; /* Use flexbox */
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
     position: relative;
     top: 132px;
     width: 500px;
@@ -129,6 +130,7 @@
     font-size: 30px;
     font-weight: 700;
     white-space: nowrap;
+    cursor: pointer;
   }
   
   .menu .line-1 {

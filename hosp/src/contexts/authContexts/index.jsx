@@ -15,28 +15,27 @@ export function AuthProvider({ children }) {
     const [hospitalName, setHospitalName] = useState(""); 
 
     useEffect(() => {
-        const unsubscribe = onAuthStateChanged(auth, initializeUser);
+        const unsubscribe = onAuthStateChanged(auth, (user) => {
+            if (user) {
+                setCurrentUser({ ...user });
+                setUserLoggedIn(true);
+            } else {
+                setCurrentUser(null);
+                setUserLoggedIn(false);
+            }
+            setLoading(false);
+        });
+
         return unsubscribe;
     }, []);
-
-    async function initializeUser(user) {
-        if (user) {
-            setCurrentUser({ ...user });
-            setUserLoggedIn(true);
-        } else {
-            setCurrentUser(null);
-            setUserLoggedIn(false);
-        }
-        setLoading(false);
-    }
 
     const value = {
         currentUser,
         userLoggedIn,
         loading,
         setUserLoggedIn,
-        hospitalName, 
-        setHospitalName, 
+        hospitalName,
+        setHospitalName,
     };
 
     return (
