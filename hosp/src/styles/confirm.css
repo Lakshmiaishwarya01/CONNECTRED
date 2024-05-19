@@ -1,226 +1,83 @@
 .conf {
-  background-color: rgba(255, 255, 255, 1);
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  width: 100%;
-  height:100vh;
-  }
-  
-  .conf .div {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(206, 44, 107, 0.2) 100%);
-    background-color: rgba(255, 255, 255, 1);
-   height: 100vh;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-  }
-  
-    .conf .overlap-2 {
-      background-color: #ffffff;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff0f6;
+  position: relative;
+}
+
+.conf .div {
+  width: 80%;
+  max-width: 1200px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(206, 44, 107, 0.2) 100%);
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.conf .overlap-2 {
+  background-color: #fff0f6;
   border-radius: 30px;
-  height: 1104px;
-  left: 650px;
   position: absolute;
   top: 100px;
-  width:1500px;
-    }
-    
-    .conf .overlap-group-wrapper {
-      height: 150px;
-      left: 66px;
-      position: absolute;
-      top: 480px;
-      width: 1305px;
-    }
-    
-    .conf .overlap-group-2 {
-      background-color: #fff0f6;
-      border-radius: 30px;
-      height: 170px;
-      width: 1291px;
-      left: 0;
-      position: relative;
-      
-    }
-    
-    .conf .overlap-group-3 {
-      height: 112px;
-      left: 296px;
-      position: absolute;
-      top: 30px;
-      width: 566px;
-    }
-    
-    .conf .text-wrapper-10 {
-      color: #000000;
-      font-family: "SF Pro Display-LightItalic", Helvetica;
-      font-size: 20px;
-      font-style: italic;
-      font-weight: 300;
-      left: 623px;
-      letter-spacing: 0;
-      line-height: normal;
-      position: absolute;
-      text-align: center;
-      top: 49px;
-      white-space: nowrap;
-    }
-    
-    .conf .p {
-      color: #000000;
-      font-family: "SF Pro Display-LightItalic", Helvetica;
-      font-size: 20px;
-      font-style: italic;
-      font-weight: 300;
-      left: 296px;
-      letter-spacing: 0;
-      line-height: normal;
-      position: absolute;
-      text-align: center;
-      top: 49px;
-      white-space: nowrap;
-    }
-    
-    .conf .text-wrapper-11 {
-      color: #000000;
-      font-family: "SF Pro Display-LightItalic", Helvetica;
-      font-size: 20px;
-      font-style: italic;
-      font-weight: 300;
-      left: 296px;
-      letter-spacing: 0;
-      line-height: normal;
-      position: absolute;
-      text-align: center;
-      top: 16px;
-      white-space: nowrap;
-    }
-    
-    .conf .text-wrapper-12 {
-      color: #000000;
-      font-family: "SF Pro Display-LightItalic", Helvetica;
-      font-size: 20px;
-      font-style: italic;
-      font-weight: 300;
-      left: 623px;
-      letter-spacing: 0;
-      line-height: normal;
-      position: absolute;
-      text-align: center;
-      top: 16px;
-      white-space: nowrap;
-    }
-    
-    .conf .rectangle {
-      background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(238.41, 209.8, 220.84) 100%);
-      border-radius: 30px;
-      height: 44px;
-      left: 476px;
-      position: absolute;
-      top: 126px;
-      width: 384px;
-      border:none;
-      cursor:pointer
-    }
-    
-    .conf .text-wrapper-13 {
-      color: #000000;
-      font-family: "SF Pro Display-SemiboldItalic", Helvetica;
-      font-size: 20px;
-      font-style: italic;
-      font-weight: 400;
-      left: 591px;
-      letter-spacing: 0;
-      line-height: normal;
-     
-      text-align: center;
-      top: 136px;
-      white-space: nowrap;
-    }
-    
-    .conf .text-wrapper-14 {
-      color: #000000;
-      font-family: "SF Pro Display-SemiboldItalic", Helvetica;
-      font-size: 20px;
-      font-style: italic;
-      font-weight: 400;
-      left: 79px;
-      letter-spacing: 0;
-      line-height: normal;
-      position: absolute;
-      text-align: center;
-      top: 30px;
-      white-space: nowrap;
-    }
-    
-    .conf .text-wrapper-15 {
-      color: #000000;
-      font-family: "SF Pro Display-LightItalic", Helvetica;
-      font-size: 20px;
-      font-style: italic;
-      font-weight: 300;
-      left: 1020px;
-      letter-spacing: 0;
-      line-height: normal;
-      position: absolute;
-      text-align: center;
-      top: 16px;
-      white-space: nowrap;
-    }
-    
-    .conf .overlap-wrapper {
-      height: 150px;
-      left: 64px;
-      position: absolute;
-      top: 300px;
-      width: 1305px;
-    }
-    
-    .conf .text-wrapper-16 {
-      color: #000000;
-      font-family: "SF Pro Display-SemiboldItalic", Helvetica;
-      font-size: 20px;
-      font-style: italic;
-      font-weight: 400;
-      left: 93px;
-      letter-spacing: 0;
-      line-height: normal;
-      position: absolute;
-      text-align: center;
-      top: 35px;
-      white-space: nowrap;
-    }
-    
-    .conf .div-wrapper {
-      height: 150px;
-      left: 60px;
-      position: absolute;
-      top: 660px;
-      width: 1305px;
-    }
-    
-    .conf .overlap-3 {
-      height: 150px;
-      left: 60px;
-      position: absolute;
-      top: 120px;
-      width: 1326px;
-    }
-  
-    
-    .conf .text-wrapper-24 {
-      color: #000000;
-      font-family: "SF Pro Display-Bold", Helvetica;
-      font-size: 32px;
-      font-weight: 700;
-      left: 572px;
-      letter-spacing: 0;
-      line-height: normal;
-      opacity: 0.5;
-      position: absolute;
-      text-align: center;
-      top: 30px;
-      white-space: nowrap;
-    }
+  left: 60%;
+  transform: translateX(-50%);
+  width: 50%;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.conf .overlap-3, .conf .overlap-wrapper {
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 80%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+}
+.conf .text-wrapper-24 {
+  font-size: 30px;
+  font-weight: 700;
+  white-space: nowrap;
+  color: #000000;
+  font-family: "SF Pro Display-Bold", Helvetica;
+  margin-top: 20px;
+  text-align: center;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 40%;
+  z-index: 999;
+}
+
+.conf .text-wrapper-11 {
+  font-size: 25px;
+  font-style: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.conf .rectangle {
+  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(238.41, 209.8, 220.84) 100%);
+  border-radius: 30px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 50px;
+}
+
+.conf .overlap-group-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
   
