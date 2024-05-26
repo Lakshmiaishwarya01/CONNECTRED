@@ -41,7 +41,7 @@
   gap:20px;
 }
 
-.patient .text-wrapper-24 {
+.patient .text-wrapper-1 {
   font-size: 30px;
   font-weight: 700;
   white-space: nowrap;
@@ -65,9 +65,7 @@
   box-sizing: border-box; 
 }
 
-.patient .text-wrapper-11,
-.patient .text-wrapper-12,
-.patient .text-wrapper-16 {
+.patient .text-wrapper-2{
   font-size: 25px;
   font-style: bold;
   text-align: center;

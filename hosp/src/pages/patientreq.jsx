@@ -51,12 +51,24 @@ const Request = () => {
     }
   };
   
+  const handleDeleteRequest = async (requestKey) => {
+    try {
+     
+      const patientRef = ref(db, `patient/${requestKey}`);
+      await remove(patientRef);
+
+      setPatientRequests(prevRequests => prevRequests.filter(([key]) => key !== requestKey));
+      alert("Request deleted!");
+    } catch (error) {
+      console.error("Error deleting request:", error);
+    }
+  };
 
   return (
     <div className="patient">
       <Menu hospitalName={hospitalName} />
       <div className="overlap-2">
-        <div className="text-wrapper-24">Patient Requests</div>
+        <div className="text-wrapper-1">Patient Requests</div>
         <div className="overlap-3-container">
           {loading ? (
             <div>Loading...</div>
@@ -65,18 +77,19 @@ const Request = () => {
           ) : (
             patientRequests.map(([key, request], index) => (
               <div key={key} className="overlap-3">
-                <div className="text-wrapper-11">
+                <div className="text-wrapper-2">
                   Blood Group : {request.bloodGroup}
                 </div>
-                <div className="text-wrapper-16">
+                <div className="text-wrapper-2">
                   Patient Name: {request.patientName}
                 </div>
-                <div className="text-wrapper-12">
+                <div className="text-wrapper-2">
                   Urgency level : {request.urgencyLevel}
                 </div>
                 <button className="rectangle" onClick={() => handleConfirmRequest([key, request])}>
-                  <div className="text-wrapper-13">Confirm</div>
+                  <div>Confirm</div>
                 </button>
+                <button className="delete-button" onClick={() => handleDeleteRequest(key)}>X</button>
               </div>
             ))
           )}

@@ -23,4 +23,3 @@ function RouterPaths() {
 }
 
 export default RouterPaths;
-

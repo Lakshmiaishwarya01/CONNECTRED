@@ -1,141 +1,163 @@
-
 .menu .overlap-group {
-    background-color: #ffffff;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-  }
+  background-color: #ffffff;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu .line-2 {
+  height: 1px;
+  position: absolute;
+  top: 350px;
+  width: 276px;
+}
+
+.menu .hist {
+  color: #000000;
+  font-family: "SF Pro Display-SemiboldItalic", Helvetica;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 400;
+  left: 129px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 300px;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.menu .line-3 {
+  height: 1px;
+  position: absolute;
+  top: 450px;
+  width: 276px;
+}
+
+.menu .pat {
+  color: #000000;
+  font-family: "SF Pro Display-SemiboldItalic", Helvetica;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 400;
+  left: 125px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 400px;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.menu .line-4 {
+  height: 1px;
+  position: absolute;
+  top: 550px;
+  width: 276px;
+}
+
+.menu .don {
+  color: #000000;
+  font-family: "SF Pro Display-SemiboldItalic", Helvetica;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 400;
+  left: 112px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 500px;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+}
+.menu .Navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 50px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.menu .overlap {
+  background-color: #fff0f6;
+  border-radius: 30px;
+  box-shadow: 0px 1px 42.4px -20px #00000040;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 132px;
+  width: 500px;
+  border: none;
+  text-decoration: none;
+}
+
+.menu .req {
+  color: #ce2c6b;
+  font-family: "SF Pro Display-Bold", Helvetica;
+  font-size: 30px;
+  font-weight: 700;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.menu .line-1 {
+  height: 1px;
+  position: absolute;
+  top: 250px;
+  width: 275px;
+}
+.menu .connectred-wrapper{
+  display: flex;
+  flex-direction: column;
   
-  .menu .line-2 {
-    height: 1px;
-    position: absolute;
-    top: 350px;
-    width: 276px;
-  }
+}
+.menu .connectred {
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(180deg, rgb(255, 244.8, 0) 12.4%, rgb(216, 87, 137) 100%);
+  background-clip: text;
+  color: transparent;
+  font-family: "Inter-Black", Helvetica;
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  -webkit-text-fill-color: transparent;
+  margin: 0px;
+  white-space: nowrap;
+}
+.menu .hospital{
+  color: #d9588a;
+  font-family: "SF Pro Display-Medium", Helvetica;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  margin-top:5px;
   
-  .menu .hist {
-    color: #000000;
-    font-family: "SF Pro Display-SemiboldItalic", Helvetica;
-    font-size: 30px;
-    font-style: italic;
-    font-weight: 400;
-    left: 129px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    text-align: center;
-    top: 300px;
-    white-space: nowrap;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  .menu .line-3 {
-    height: 1px;
-    position: absolute;
-    top: 450px;
-    width: 276px;
-  }
-  
-  .menu .pat {
-    color: #000000;
-    font-family: "SF Pro Display-SemiboldItalic", Helvetica;
-    font-size: 30px;
-    font-style: italic;
-    font-weight: 400;
-    left: 125px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    text-align: center;
-    top: 400px;
-    white-space: nowrap;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  .menu .line-4{
-    height: 1px;
-    position: absolute;
-    top: 550px;
-    width: 276px;
-  }
-  
-  .menu .don {
-    color: #000000;
-    font-family: "SF Pro Display-SemiboldItalic", Helvetica;
-    font-size: 30px;
-    font-style: italic;
-    font-weight: 400;
-    left: 112px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    text-align: center;
-    top: 500px;
-    white-space: nowrap;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  
-  
-  .menu .connectred {
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent;
-    background: linear-gradient(180deg, rgb(255, 244.8, 0) 12.4%, rgb(216, 87, 137) 100%);
-    background-clip: text;
-    color: transparent;
-    font-family: "Inter-Black", Helvetica;
-    font-size: 36px;
-    font-weight: 400;
-    left: 75px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    text-align: center;
-    top: 0;
-  }
-  .menu .Navbar{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   top: 50px;
-   position: absolute;
-   height: 100%;
-   width:100%;
-   cursor: pointer;
-  }
-  .menu .overlap {
-    background-color: #fff0f6;
-    border-radius: 30px;
-    box-shadow: 0px 1px 42.4px -20px #00000040;
-    height: 62px;
-    display: flex; 
-    align-items: center; 
-    justify-content: center;
-    position: relative;
-    top: 132px;
-    width: 500px;
-    border: none;
-    text-decoration: none;
-  }
-  .menu .req {
-    color: #ce2c6b;
-    font-family: "SF Pro Display-Bold", Helvetica;
-    font-size: 30px;
-    font-weight: 700;
-    white-space: nowrap;
-    cursor: pointer;
-  }
-  
-  .menu .line-1 {
-    height: 1px;
-    position: absolute;
-    top: 250px;
-    width: 275px;
-  }
+}
+.menu .overlap.active,
+.menu .hist.active,
+.menu .pat.active,
+.menu .don.active {
+  color: #ce2c6b;
+  font-weight: bold;
+  text-decoration: none;
+}

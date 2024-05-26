@@ -23,13 +23,12 @@ const HomePage = () => {
             every donor becomes a hero."
           </p>
         </div>
-        <div className="overlap-group-2">
           <Link to="/login">
             <button className="rectangle">
               <div className="login">Login</div>
             </button>
           </Link>
-        </div>
+        
        
         <div className="overlap-3">
           <p className="connectred">connectred</p>
